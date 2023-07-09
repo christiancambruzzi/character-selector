@@ -1,7 +1,7 @@
 const characters = document.querySelectorAll(".character");
 
 characters.forEach((character) => {
-  character.addEventListener("mouseenter", () => {
+  character.addEventListener("click", () => {
     if (window.innerWidth < 450) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -20,9 +20,9 @@ function CharacterSelectionRemove() {
 }
 
 function modifySelectedCharacterImage(character) {
-  const characterBigImage = document.querySelector(".big-character");
+  const characterBigImage = document.querySelector(".big-character-img");
   const characterId = character.attributes.id.value;
-  characterBigImage.src = `./src/imagens/card-${characterId}.png`;
+  characterBigImage.src = `./src/img/${characterId}.png`;
 }
 
 function modifySelectedCharacterName(character) {
@@ -34,3 +34,24 @@ function modifySelectedCharacterDescription(character) {
   const characterDescription = document.getElementById("character-description");
   characterDescription.innerText = character.getAttribute("data-description");
 }
+
+const character = document.querySelector(".characters");
+const characterImg = document.querySelector(".big-character-img");
+
+
+if ((character.style.visibility = "hidden")) {
+  characterImg.addEventListener("mouseout", () => {
+    character.style.visibility = "visible";
+    
+  });
+} if ((character.style.visibility = "visible")) {
+  characterImg.addEventListener("mouseenter", () => {
+    character.style.visibility = "hidden";
+  });
+} 
+
+// if (character.style.visibility === "visible") {
+//   character.style.visibility = "hidden";
+// } else {
+//   character.style.visibility = "visible";
+// }

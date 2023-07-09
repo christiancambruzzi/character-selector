@@ -39,19 +39,14 @@ const character = document.querySelector(".characters");
 const characterImg = document.querySelector(".big-character-img");
 
 
-if ((character.style.visibility = "hidden")) {
+if ((character.style.opacity = "0")) {
   characterImg.addEventListener("mouseout", () => {
-    character.style.visibility = "visible";
+    character.style.opacity = "1";
     
   });
-} if ((character.style.visibility = "visible")) {
+} if ((character.style.opacity = "1")) {
   characterImg.addEventListener("mouseenter", () => {
-    character.style.visibility = "hidden";
+    character.style.opacity = "0";
   });
 } 
 
-// if (character.style.visibility === "visible") {
-//   character.style.visibility = "hidden";
-// } else {
-//   character.style.visibility = "visible";
-// }

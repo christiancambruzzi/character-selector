@@ -25,7 +25,8 @@
   align-items: center;
   max-width: 585px;
   gap: 30px;
-  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s;
 }
 
 .characters-selection .characters .title {
@@ -87,7 +88,6 @@
   z-index: 3;
 }
 
-
 .selected-character .character-info .character-name {
   border-bottom: 4px solid #d8cc34;
   letter-spacing: 4px;
@@ -124,6 +124,10 @@
   .selected-character .big-character {
     width: 350px;
     height: 350px;
+  }
+
+  .selected-character .big-character .big-character-img:hover {
+    transform: translate(0, 0) scale(1.3) rotate(-10deg);
   }
 
   .selected-character .character-description {

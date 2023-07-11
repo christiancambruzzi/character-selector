@@ -10,6 +10,7 @@
 .header .logo {
   max-width: 300px;
   margin-top: 100px;
+  z-index: 1;
 }
 .characters-selection {
   display: flex;
@@ -33,7 +34,7 @@
   font-size: 20px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  border-bottom: 4px solid #d8cc34;
+  border-bottom: 4px solid #DBA90D;
   width: 100%;
   text-align: center;
 }
@@ -52,7 +53,7 @@
 }
 
 .characters-selection .character.selected {
-  border: 4px solid #d8cc34;
+  border: 4px solid #DBA90D;
   border-radius: 15px;
   transform: scale(1.3) rotate(15deg);
   z-index: 2;
@@ -81,15 +82,16 @@
   max-width: 100%;
   max-height: 100%;
   transition: all 0.3s;
+  z-index: 10;
 }
 
 .selected-character .big-character .big-character-img:hover {
   transform: translate(-600px, 110px) scale(1.8) rotate(-10deg);
-  z-index: 3;
+  z-index: 10;
 }
 
 .selected-character .character-info .character-name {
-  border-bottom: 4px solid #d8cc34;
+  border-bottom: 4px solid #DBA90D;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 10px;

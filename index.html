@@ -9,40 +9,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-  <header class="header">
-    <img class="logo" src="./src/img/logo.png" alt="logo">
-  </header>
-  <main class="characters-selection">
-    <section class="characters">
-      <h1 class="title">Select a starship</h1>
-      <ul class="characters-list">
-        <li class="character selected" id="b-wing" data-name="b-wing" data-description="The B-wing: a formidable starship with unique gyroscopic design, packs a punch with its advanced weaponry."><img src="./src/img/b-wing.webp" alt=""></li>
-        <li class="character" id="marauder" data-name="Marauder" data-description="Star Wars Starship: Marauder - A formidable vessel armed with cutting-edge weaponry and ruthless efficiency."><img src="./src/img/marauder.webp" alt=""></li>
-        <li class="character" id="millennium-falcon" data-name="Millenium-falcon" data-description="Iconic starship in the Star Wars universe, the Millennium Falcon is a legendary smuggler's vessel."><img src="./src/img/millennium-falcon.jpg" alt=""></li>
-        <li class="character" id="naboo" data-name="naboo" data-description="The Naboo starship: Elegant and agile, it combines sleek design with advanced technology."><img src="./src/img/naboo.jpg" alt=""></li>
-        <li class="character" id="razor-crest" data-name="Razor Crest" data-description="The Razor Crest: Iconic starship of the Mandalorian, armed and agile, a rugged vessel navigating the galaxy's perils."><img src="./src/img/razor-crest.jpg" alt=""></li>
-        <li class="character" id="slave-one" data-name="Slave One" data-description="Iconic bounty hunter's ship: Slave I, agile and formidable. Equipped with advanced weaponry and tracking systems."><img src="./src/img/slave-one.webp" alt=""></li>
-        <li class="character" id="tie-fighter" data-name="Tie Fighter" data-description="Swift and deadly, the TIE Fighter is an iconic starship of the Imperial forces in Star Wars, boasting unparalleled agility."><img src="./src/img/tie-fighter.jpg" alt=""></li>
-        <li class="character" id="x-wing" data-name="X Wing" data-description="The X-wing: Iconic Rebel starfighter with versatile S-foils for combat agility and proton torpedoes."><img src="./src/img/x-wing.jpg" alt=""></li>
-      </ul>
-    </section>
-    <section class="selected-character">
-      <div class="big-character">
-        <img class="big-character-img" src="./src/img/b-wing.png" alt="">
-      </div>
 
-      <div class="character-info">
-        <h2 class="character-name" id="character-name">B-Wing</h2>
-        <p class="character-description" id="character-description">
-          The B-wing: a formidable starship with unique gyroscopic design, packs a punch with its advanced weaponry.
-        </p>
-      </div>
-    </section>
-  </main>
-  <script src="./src/js/script.js"></script>
+<body>
+
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+
+    <header class="header">
+      <img class="logo" src="./src/img/logo.png" alt="logo">
+    </header>
+    <main class="characters-selection">
+      <section class="characters">
+        <h1 class="title">Select a starship</h1>
+        <ul class="characters-list">
+          <li class="character selected" id="b-wing" data-name="b-wing" data-description="The B-wing: a formidable starship with unique gyroscopic design, packs a punch with its advanced weaponry."><img src="./src/img/b-wing.webp" alt=""></li>
+          <li class="character" id="marauder" data-name="Marauder" data-description="Star Wars Starship: Marauder - A formidable vessel armed with cutting-edge weaponry and ruthless efficiency."><img src="./src/img/marauder.webp" alt=""></li>
+          <li class="character" id="millennium-falcon" data-name="Millenium-falcon" data-description="Iconic starship in the Star Wars universe, the Millennium Falcon is a legendary smuggler's vessel."><img src="./src/img/millennium-falcon.jpg" alt=""></li>
+          <li class="character" id="naboo" data-name="naboo" data-description="The Naboo starship: Elegant and agile, it combines sleek design with advanced technology."><img src="./src/img/naboo.jpg" alt=""></li>
+          <li class="character" id="razor-crest" data-name="Razor Crest" data-description="The Razor Crest: Iconic starship of the Mandalorian, armed and agile, a rugged vessel navigating the galaxy's perils."><img src="./src/img/razor-crest.jpg" alt=""></li>
+          <li class="character" id="slave-one" data-name="Slave One" data-description="Iconic bounty hunter's ship: Slave I, agile and formidable. Equipped with advanced weaponry and tracking systems."><img src="./src/img/slave-one.webp" alt=""></li>
+          <li class="character" id="tie-fighter" data-name="Tie Fighter" data-description="Swift and deadly, the TIE Fighter is an iconic starship of the Imperial forces in Star Wars, boasting unparalleled agility."><img src="./src/img/tie-fighter.jpg" alt=""></li>
+          <li class="character" id="x-wing" data-name="X Wing" data-description="The X-wing: Iconic Rebel starfighter with versatile S-foils for combat agility and proton torpedoes."><img src="./src/img/x-wing.jpg" alt=""></li>
+        </ul>
+      </section>
+      <section class="selected-character">
+        <div class="big-character">
+          <img class="big-character-img" src="./src/img/b-wing.png" alt="">
+        </div>
+
+        <div class="character-info">
+          <h2 class="character-name" id="character-name">B-Wing</h2>
+          <p class="character-description" id="character-description">
+            The B-wing: a formidable starship with unique gyroscopic design, packs a punch with its advanced weaponry.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./src/js/script.js"></script>
 </body>
 
 </html>
